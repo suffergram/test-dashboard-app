@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { getSites } from "../components/services/getSites";
+import { getSites } from "../services/getSites";
 import { Site } from "../types/site";
 
 export function useGetSites() {

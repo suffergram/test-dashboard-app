@@ -1,0 +1,19 @@
+.test-info-name {
+  font-weight: 600;
+  font-size: 14px;
+  color: #222222;
+}
+
+.test-info-button {
+  display: flex;
+  width: 100px;
+  font-family: "Nunito";
+  font-size: 18px;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  position: absolute;
+  bottom: 3rem;
+  color: #222222;
+  align-items: center;
+}

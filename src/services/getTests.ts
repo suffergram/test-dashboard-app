@@ -1,4 +1,4 @@
-import { host } from "../../lib/host";
+import { host } from "../lib/host";
 
 export async function getTests() {
   try {

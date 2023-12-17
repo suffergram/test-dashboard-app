@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { getTests } from "../components/services/getTests";
+import { getTests } from "../services/getTests";
 import { Test } from "../types/test";
 
 export function useGetTests() {
