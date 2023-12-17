@@ -4,6 +4,7 @@ import { testStatus } from "../../lib/test-status";
 import { testState } from "../../lib/test-state";
 import { Button } from "../button/button";
 import "./style.css";
+import { Link } from "react-router-dom";
 
 type ListItemProps = {
   item: Test;
@@ -44,12 +45,12 @@ export function ListItem({ item }: ListItemProps) {
           {status}
         </p>
         <p className="list-item-site">{item.site}</p>
-        <Button
-          type="button"
+        <Link
+          to={`${item.status === "DRAFT" ? "finalize" : "results"}/${item.id}`}
           className="list-item-button"
-          value={buttonValue}
-          style={buttonStyle}
-        />
+        >
+          <Button type="button" value={buttonValue} style={buttonStyle} />
+        </Link>
       </div>
     </li>
   );
